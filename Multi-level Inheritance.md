@@ -1,4 +1,5 @@
-# Exp.No:24  
+
+# Exp.No:5d  
 ## Multi-level Inheritance
 
 ---
@@ -38,11 +39,30 @@ To write a Python program to get the name, age, and ID of a person and display t
 
 ### PROGRAM
 
-```
-
-
+```python
+class Person:
+    def getname(self,name):
+        self.name=name
+class Age(Person):
+    def getage(self,age):
+        self.age=age
+class Location(Age):
+    def getlocation(self,l):
+        self.l=l
+    def display(self):
+        print(f"{self.name} {self.age} {self.l}")
+n=input()
+a=int(input())
+l=input()
+g=Location()
+g.getname(n)
+g.getage(a)
+g.getlocation(l)
+g.display()
 ```
 
 ### OUTPUT
+<img width="1182" height="242" alt="image" src="https://github.com/user-attachments/assets/011e30c6-c664-4fdc-980e-f3e47c696ab3" />
 
 ### RESULT
+Therefore, the output is the example to write a Python program to get the name, age, and ID of a person and display them using multilevel inheritance.
